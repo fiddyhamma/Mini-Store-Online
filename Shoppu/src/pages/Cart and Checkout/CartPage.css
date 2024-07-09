@@ -1,0 +1,495 @@
+/* Desktop */
+.return-to-shop{
+    position: relative;
+    left: 560px;
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #69F0AE;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.return{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+
+.cart-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cart-header h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .for-cart{
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input{
+    border: none;
+    outline: none;
+  }
+
+  .products-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 782px;
+    height: 36px;
+    padding: 10px;
+    background-color: #F2F4F5;
+  }
+
+  .products-line-2{
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .products-line p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #475156;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px;
+    gap: 15px;
+    align-items: center;
+    width: 782px;
+    height: 72px;
+  }
+  p{
+    font-size: 14px;
+  }
+  
+  .item-details {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .item-price, .item-quantity, .item-total {
+    flex: 1;
+    text-align: center;
+  }
+  .item-price{
+    width: 172px;
+  }
+
+  .item-quantity{
+    width: 172px;
+    height: 48px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1.5px solid #E4E7E9;
+  }
+  
+  .item-quantity input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .cart-summary {
+    width: 351px;
+    height: 314px;
+    margin-top: 53px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .cart-summary h2 {
+    font-size: 18px;
+  }
+  
+  .cart-summary p{
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: lighter;
+  }
+  .total-text{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 180px;
+  }
+  .total-text-2{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 205px;
+  }
+  .total-text-2 h3, .total-text-2 p{
+    color: #191C1F;
+  }
+
+  .cart-summary h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: lighter;
+  }
+  
+  .checkout-button{
+    border-radius: 0;
+    border: none;
+    width: 80%;
+    margin-top: 10px;
+    height: 56px;
+    background-color: #0C239E;
+    cursor: pointer;
+  }
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 351px;
+    height: 220px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .coupon h2{
+    font-size: 18px;
+  }
+.coupon input{
+    padding: 5px;
+    height: 40px;
+    border: 0.5px solid #E4E7E9;
+}
+
+
+.cart-coupon{
+  width: 40%;
+}
+
+.cart-summary {
+  max-width: 238px;
+  height: 314px;
+  margin-top: 53px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.coupon{
+  max-width: 238px;
+}
+  .for-coupon{
+    width: 159px;
+    height: 48px;
+    border-radius: 0%;
+    background-color: #69F0AE;
+  }
+
+  .total-text{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 120px;
+  }
+  .total-text-2{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 140px;
+  }
+
+  .navigate-line-2{
+    height: 30px;
+    width: 97%;
+    background-color: #F9FAFA;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 15px;
+    margin-top: 20px;
+}
+.img-details{
+  width: 72px;
+  height: 72px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .return-to-shop{
+    left: 45%;
+  }
+
+  .cart-container{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+.cart-page {
+  justify-content: center;
+    display: flex;
+  }
+
+.cart-header{
+  width: 54%;
+}
+
+  .products-line, .cart-item, .item-details, .item-price, .item-quantity, .item-total, .cart-summary, .coupon {
+      width: 90%;
+  }
+
+  .products-line {
+       display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 100%;
+  }
+
+  .products-line-2 {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+  }
+  .img-details{
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    gap: 10px;
+    align-items: center;
+    width: 360px;
+    height: 62px;
+  }
+
+  .item-details, .item-price, .item-total{
+    font-size: 12px;
+  }
+
+  .item-quantity{
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1.5px solid #E4E7E9;
+  }
+  
+  .item-quantity input {
+    width: 10px;
+    text-align: center;
+  }
+
+  .checkout-button {
+      height: 48px;
+  }
+
+  .navigate-line-2{
+    height: 30px;
+    width: 95%;
+    background-color: #F9FAFA;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 15px;
+    margin-top: 20px;
+}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cart-container{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .cart-page {
+      padding: 10px;
+  }
+  .cart-header, .cart-coupon{
+    width: 100%;
+  }
+  .cart-header h1 {
+      font-size: 16px;
+  }
+
+  .products-line p {
+      font-size: 10px;
+  }
+  .products-line {
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 32px;
+   width: 95%;
+}
+
+.products-line-2 {
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 6px;
+  gap: 10px;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+}
+.item-quantity{
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1.5px solid #E4E7E9;
+}
+
+.item-quantity input {
+  width: 10px;
+  text-align: center;
+}
+
+.return-to-shop{
+  position: relative;
+  left: 130px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid #69F0AE;
+}
+
+.arrow{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+.return{
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  .cart-summary h2, .cart-summary p, .cart-summary h3 {
+      font-size: 12px;
+  }
+
+  .checkout-button {
+      height: 40px;
+  }
+
+.cart-coupon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-summary, .coupon{
+  width: 100%;
+  height: auto;
+  gap: 15px;
+}
+
+  .coupon h2 {
+      font-size: 16px;
+  }
+
+  .coupon input {
+      height: 30px;
+  }
+
+  .for-coupon {
+      height: 40px;
+  }
+
+  .navigate-line-2{
+    height: 30px;
+    width: 95%;
+    background-color: #F9FAFA;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+  .subscribe h2{
+    font-size: 20px;
+}
+  .img-details{
+    width: 32px;
+    height: 32px;
+  }
+}

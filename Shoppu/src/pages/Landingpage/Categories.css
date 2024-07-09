@@ -1,0 +1,328 @@
+.categories-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.shop-categories, .bandages-section {
+    margin-bottom: 40px;
+}
+
+.shop-categories h2, .bandages-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.category-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 236px;
+}
+.bandage-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 320px;
+}
+
+.category-item, .bandage-item {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bandage-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-for-category{
+    width: 148px;
+    height: 148px;
+}
+.img-for-bandage-category{
+    width: 202px;
+    height: 172px;
+}
+
+.category-item p, .bandage-item p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.bandages-header {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+u{
+    color: #69F0AE;
+}
+
+.browse-all, .view-all-button {
+    color: #007BFF;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.view-all {
+    margin-left: 86%;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.view-all-button:hover, .browse-all:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .categories-section {
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    
+    .shop-categories, .bandages-section {
+        margin-bottom: 20px;
+    }
+    
+    .shop-categories h2, .bandages-section h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .category-items {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 700px;
+        height: 180px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding: 20px;
+
+    }
+    .bandage-items {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: 350px;
+        width: 700px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding: 30px;
+    }
+    
+    .category-item, .bandage-item {
+        width: calc(33.333% - 20px);
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .bandage-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 12px;
+        font-size: 12px;
+    }
+    
+    .img-for-category{
+        width: 148px;
+        height: 138px;
+    }
+    .img-for-bandage-category{
+        width: 202px;
+        height: 172px;
+    }
+    
+    .category-item p, .bandage-item p {
+        margin: 5px 0;
+        color: #666;
+        font-size: 14px;
+    }
+    
+    .bandages-header {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+    u{
+        color: #69F0AE;
+    }
+    
+    .browse-all, .view-all-button {
+        color: #007BFF;
+        text-decoration: none;
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        background: transparent;
+    }
+    
+    .view-all {
+        margin-left: 70%;
+        text-align: right;
+        margin-top: 30px;
+    }
+    
+    .view-all-button:hover, .browse-all:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .categories-section {
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    
+    .shop-categories, .bandages-section {
+        margin-bottom: 20px;
+    }
+    
+    .shop-categories h2, .bandages-section h2 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .category-items {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 320px;
+        height: 180px;
+        padding: 10px;
+
+    }
+    .bandage-items {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: 320px;
+        width: 320px;
+        padding: 10px;
+    }
+    
+    .category-item, .bandage-item {
+        width: calc(28.333% - 20px);
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .bandage-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 12px;
+        font-size: 8px;
+    }
+    
+    .img-for-category{
+        width: 80px;
+        height: 100px;
+    }
+
+    .img-for-bandage-category{
+        width: 80px;
+        height: 100px;
+    }
+    
+    .category-item p, .bandage-item p {
+        margin: 4px 0;
+        color: #666;
+        font-size: 12px;
+    }
+    
+    .bandages-header {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-around;
+        gap: 12px;
+        align-items: center;
+    }
+    .bandages-header h2{
+        font-size: 10px;
+    }
+    u{
+        color: #69F0AE;
+    }
+    
+    .browse-all {
+        color: #007BFF;
+        text-decoration: none;
+        width: 100px;
+        height: 32px;
+        border-radius: 5px;
+        background: transparent;
+        font-size: 6.5px;
+    }
+
+    .view-all-button{
+        color: #007BFF;
+        text-decoration: none;
+        width: 60px;
+        height: 32px;
+        border-radius: 5px;
+        background: transparent;
+        font-size: 8px;
+    }
+    
+    .view-all {
+        margin-left: 658;
+        text-align: right;
+        margin-top: 30px;
+    }
+    
+    .view-all-button:hover, .browse-all:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .star{
+        width: 80px;
+        font-size: 10px;
+    }
+}
