@@ -21,13 +21,13 @@ const CartPage = () => {
 
   return (
     <>
-    <div className="navigate-line-2"><span><GoHome /></span><span  onClick={handleReturn}n>Home</span> <span><MdOutlineNavigateNext /></span> <span style={{'color': '#69F0AE'}}>Cart Page </span></div>
+    <div className="navigate-line-2"><span><GoHome /></span><span  onClick={handleReturn}>Home</span> <span><MdOutlineNavigateNext /></span> <span style={{'color': '#69F0AE'}}>Cart Page </span></div>
     <div className="cart-page">
         <div className="cart-container">
           <div className="cart-header">
             <h1>Shopping Cart</h1>
             <div className="products-line">
-            <div><p>PRODUCTS</p></div>
+            <div className='products-text'><span>PRODUCTS</span></div>
             <div className='products-line-2'>
             <p>PRICE</p>
             <p>QUANTITY</p>

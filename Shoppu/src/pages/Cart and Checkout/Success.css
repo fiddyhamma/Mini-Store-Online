@@ -9,6 +9,9 @@
   
   .success-container {
     width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
   
   h1 {
@@ -95,6 +98,7 @@
     width: 100%;
     height: 100vh;
     text-align: center;
+    padding: 0;
   }
 
   h1 {
@@ -107,15 +111,24 @@
   }
 
   .success-actions {
+    width: 300px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 15px;
 }
 
+.success-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   .success-buttons-1, .success-buttons-2 {
-      width: 180px;
+      width: 200px;
       height: 40px;
       font-size: 12px;
   }
+
 }

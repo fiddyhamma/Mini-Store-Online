@@ -47,7 +47,7 @@
 /* Tablet Styles */
 @media (max-width: 768px) {
     .filters {
-        width: 50%; 
+        width: 40%; 
         display: flex;
         flex-direction: column;
     }
@@ -72,21 +72,22 @@
 /* Mobile Styles */
 @media (max-width: 480px) {
     .filters {
-        max-width: 100%; /* Full width on mobiles */
-        padding: 15px; /* Adjust padding for mobiles */
+        width: 40%;
+        padding: 15px; 
     }
 
     .filters h2 {
-        font-size: 14px; /* Adjust font size for mobiles */
+        font-size: 12px;
     }
 
     .filters .price-range {
-        flex-direction: column; /* Stack price inputs vertically */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .filters .price-range input {
-        width: 100%; /* Full width for price inputs */
-        margin-bottom: 10px; /* Add margin between inputs */
+        width: 100%;
+        margin-bottom: 10px; 
+
     }
 }

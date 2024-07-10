@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <>
     <Banner />
-    <section>
+    <section className='landing-page-body'>
     <div className="features">
       <div className="delivery-landing">
       <BsBoxSeam />

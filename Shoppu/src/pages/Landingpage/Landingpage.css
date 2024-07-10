@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .landing-page-body{
+    display: flex;
+    justify-content: center;
+  }
+
 .features{
     margin: 41px 30px 41px 30px;
     padding: 15px 28px 15px 28px;
@@ -76,27 +89,28 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 15px;
-        width: 680px;
-        height: auto;
+        padding: 8px;
+        width: 700px;
+        height: 120px;
+        gap: 15px;
+
     }
     
     .delivery-landing {
         width: 100%;
-        gap: 15px;
-        padding: 20px;
+        padding: 10px;
+
     }
     
     .landing-text {
+        display: flex;
         width: 100%;
         height: auto;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     
     .first{
-        font-size: 13px;
+        font-size: 12px;
         font-weight: bold;
         color: #2c3438;
     }

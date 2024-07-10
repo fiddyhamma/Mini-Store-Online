@@ -21,10 +21,10 @@ const Banner = () => {
           </div>
           <div className="text-button">
           <h2>Get access to the best <br></br> healthcare products <br></br>with just a few clicks</h2>
-          <button onClick={handleViewAllClick}><p className='shop'>SHOP NOW</p></button>
-          </div>
+          <button onClick={handleViewAllClick}><span className='button-shop'>SHOP NOW</span></button>
           <div className="bandage-scissors">
             <img src={bandage}  className='band-image'/>
+          </div>
           </div>
         </div>
         <div className="banner-image">

@@ -58,10 +58,10 @@ const Footer = () => {
             <h4>Download App</h4>
             <div className='download-buttons'>
                 <button className='buttons-for-download'>
-                <span style={{'fontSize': '14px'}}> <BsGooglePlay /> Get it Now <br></br> Google Play</span></button>
+                <span> <BsGooglePlay /> Get it Now <br></br> Google Play</span></button>
                 <br></br>
                 <button className='buttons-for-download'>
-                <span style={{'fontSize': '14px'}}> <IoLogoApple /> Get it Now <br></br> App Store </span> </button>
+                <span > <IoLogoApple /> Get it Now <br></br> App Store </span> </button>
             </div>
         </div>
     </div>

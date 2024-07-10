@@ -81,6 +81,9 @@ ul .li{
 .footer ul{
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .footer ul li a:hover{
     text-decoration: underline;
@@ -101,7 +104,6 @@ ul .li{
     background-color: #F9FAFA;
 }
 .products-category{
-    margin-top: 5px;
     width: 160px;
     height: 25px;
     background-color: #191C1F;
@@ -111,6 +113,7 @@ ul .li{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-top: 5px;
 }
 .line-accessory{
     width: 24px;
@@ -136,6 +139,11 @@ ul .li{
     margin-right: 30%;
     margin-bottom: 30px;
     color: #F9FAFA;
+}
+.category-links, .quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* Tablet */
@@ -178,14 +186,19 @@ ul .li{
 /* Mobile */
 @media (max-width: 480px) {
 
-.footers{
+    .footers{
     height: 100%;
     width: 100%;
-}
+    margin: 0;
+    padding: 0;
+    }
 
     .footer {
+        width: 100%;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         gap: 10px;
     }
@@ -203,14 +216,16 @@ ul .li{
     }
 
     .buttons-for-download {
+
         width: 100px;
         height: 50px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .products-category {
-        width: 140px;
+        width: 120px;
         height: 20px;
+        font-size: 10px;
     }
 
     .line-accessory {
