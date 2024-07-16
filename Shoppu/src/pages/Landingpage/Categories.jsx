@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import './Categories.css';
 import img1 from '../../assets/image/Bandages.png'
 import img2 from '../../assets/image/Alcohol wipe.png'
 import img3 from '../../assets/image/cotton.png'
@@ -20,79 +19,83 @@ const Categories = () => {
     };
   
     return (
-      <section className="categories-section">
-        <div className="shop-categories">
-          <h2>Shop with Categories</h2>
-          <div className="category-items">
-            <div className="category-item">
-              <img src={img1} className='img-for-category' alt="Bandages" />
-              <p>Bandages</p>
-            </div>
-            <div className="category-item">
-              <img src={img2} className='img-for-category' alt="Alcohol wipes" />
-              <p>Alcohol wipes</p>
-            </div>
-            <div className="category-item">
-              <img src={img3} className='img-for-category' alt="Sterile cotton balls" />
-              <p>Sterile cotton balls</p>
-            </div>
-            <div className="category-item">
-              <img src={img4} className='img-for-category' alt="Steri-Strips" />
-              <p>Steri-Strips</p>
-            </div>
-            <div className="category-item">
-              <img src={img5} className='img-for-category' alt="Medical Scissors" />
-              <p>Medical Scissors</p>
-            </div>
-            <div className="category-item">
-              <img src={img6} className='img-for-category' alt="Burn Creams" />
-              <p>Burn Creams</p>
-            </div>
+      <section className="py-5 bg-gray-100">
+      <div className="mb-10 ">
+        <h2 className="text-2xl mb-5 text-gray-800">Shop with Categories</h2>
+        <div className="flex flex-wrap justify-around gap-4 overflow-x-auto">
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img1} className="w-36 h-36" alt="Bandages" />
+            <p className="mt-2 text-gray-600">Bandages</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img2} className="w-36 h-36" alt="Alcohol wipes" />
+            <p className="mt-2 text-gray-600">Alcohol wipes</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img3} className="w-36 h-36" alt="Sterile cotton balls" />
+            <p className="mt-2 text-gray-600">Sterile cotton balls</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img4} className="w-36 h-36" alt="Steri-Strips" />
+            <p className="mt-2 text-gray-600">Steri-Strips</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img5} className="w-36 h-36" alt="Medical Scissors" />
+            <p className="mt-2 text-gray-600">Medical Scissors</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img6} className="w-36 h-36" alt="Burn Creams" />
+            <p className="mt-2 text-gray-600">Burn Creams</p>
           </div>
         </div>
-  
-        <div className="bandages-section">
-          <div className="bandages-header">
-            <h2>Bandages</h2>
-            <div className="bandage-row">
-              <span style={{'fontWeight': 'bold' }} ><u>All Product </u></span>
-              <span>Adhesive Bandages</span>
-              <span>Gauze Bandages</span>
-              <span>Elastic Bandages</span>
-            </div>
-            <button onClick={handleViewAllClick} className="browse-all">Products &rarr;</button>
+      </div>
+    
+      <div className="mb-10">
+        <div className="flex justify-between items-center px-5 mb-5">
+          <h2 className="text-2xl text-gray-800">Bandages</h2>
+          <div className="flex gap-3 text-gray-600">
+            <span className="font-bold underline">All Product</span>
+            <span>Adhesive Bandages</span>
+            <span>Gauze Bandages</span>
+            <span>Elastic Bandages</span>
           </div>
-          <div className="bandage-items">
-            <div className="bandage-item">
-              <img src={img7} className='img-for-bandage-category'  alt="Adhesive Bandages" />
-              <span className='star'>⭐⭐⭐⭐⭐ (505)</span>
-              <p>Adhesive Bandages (Plasters)</p>
-              <p>#500</p>
-            </div>
-            <div className="bandage-item">
-              <img src={img8} className='img-for-bandage-category'  alt="Elastic Bandages" />
-              <span className='star'>⭐⭐⭐⭐⭐ (505)</span>
-              <p>Elastic Bandages (ACE Wraps)</p>
-              <p>#2000</p>
-            </div>
-            <div className="bandage-item">
-              <img src={img9} className='img-for-bandage-category'  alt="Transparent Film Dressings" />
-              <span className='star'>⭐⭐⭐⭐⭐ (505)</span>
-              <p>Transparent Film Dressings</p>
-              <p>#3000</p>
-            </div>
-            <div className="bandage-item">
-              <img src={img10} className='img-for-bandage-category'  alt="Compression Bandages" />
-              <span className='star'>⭐⭐⭐⭐⭐ (505)</span>
-              <p>Compression Bandages</p>
-              <p>#5000</p>
-            </div>
+          <button onClick={handleViewAllClick} className="text-blue-500 hover:underline">
+            Products &rarr;
+          </button>
+        </div>
+        <div className="flex flex-wrap gap-4 justify-around overflow-x-auto">
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img7} className="w-48 h-40" alt="Adhesive Bandages" />
+            <span className="text-yellow-500">⭐⭐⭐⭐⭐ (505)</span>
+            <p className="text-gray-600">Adhesive Bandages (Plasters)</p>
+            <p className="text-gray-600">#500</p>
           </div>
-          <div className="view-all">
-            <button onClick={handleViewAllClick} className="view-all-button">View All &rarr;</button>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img8} className="w-48 h-40" alt="Elastic Bandages" />
+            <span className="text-yellow-500">⭐⭐⭐⭐⭐ (505)</span>
+            <p className="text-gray-600">Elastic Bandages (ACE Wraps)</p>
+            <p className="text-gray-600">#2000</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img9} className="w-48 h-40" alt="Transparent Film Dressings" />
+            <span className="text-yellow-500">⭐⭐⭐⭐⭐ (505)</span>
+            <p className="text-gray-600">Transparent Film Dressings</p>
+            <p className="text-gray-600">#3000</p>
+          </div>
+          <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+            <img src={img10} className="w-48 h-40" alt="Compression Bandages" />
+            <span className="text-yellow-500">⭐⭐⭐⭐⭐ (505)</span>
+            <p className="text-gray-600">Compression Bandages</p>
+            <p className="text-gray-600">#5000</p>
           </div>
         </div>
-      </section>
+        <div className="text-right mt-10 pr-5">
+          <button onClick={handleViewAllClick} className="text-blue-500 hover:underline">
+            View All &rarr;
+          </button>
+        </div>
+      </div>
+    </section>    
     );
   };
   

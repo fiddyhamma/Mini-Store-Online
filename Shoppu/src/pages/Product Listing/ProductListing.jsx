@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductListing.css';
 import { useNavigate } from 'react-router-dom';
 import Filters from './Filters';
 import ProductCard from './ProductCard';
@@ -32,29 +31,34 @@ const ProductListing = () => {
   };
 
   return (
-    <div className="product-listing">
-      <div className="navigate-line"><span><GoHome /></span><span  onClick={home} style={{'color': '#69F0AE'}}>Home</span> </div>
-      <br></br>
-      <main>
+    <>
+      <div className="product-listing max-w-screen-xl p-10 ml-20 md:p-5 md:ml-5 sm:p-2 sm:ml-0">
+      <div className="bg-[#F9FAFA] flex items-center gap-4 px-8 py-4 mt-4 mb-4">
+        <span><GoHome /></span>
+        <span onClick={home} className="text-light-green cursor-pointer">Home</span>
+      </div>
+      <br />
+      <main className="flex flex-col md:flex-row gap-8">
         <Filters />
-        <section className="product-grid">
+        <section className="product-grid text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full overflow-x-auto sm:grid-cols-2">
           {products.map((product, index) => (
-            <div className="product-item" key={index}>
+            <div className="product-item border p-2 border-custom-gray flex flex-col items-center justify-center w-full h-full" key={index}>
               <ProductCard product={product} />
             </div>
           ))}
         </section>
       </main>
-      <br></br>
-      <div className="subscribe">
-        <h2>Subscribe to our newsletter</h2>
-        <p>Get the latest updates on restock and new products</p>
-        <div className="email-input">
-        <input type="email" placeholder="Email address" />
-        <button className='subscribe-button-here'>Subscribe</button>
+      <br />
+    </div>
+    <div className="flex flex-col items-center justify-center text-white text-center p-6 w-full h-[324px] bg-[#1B6392]">
+        <h2 className="text-2xl font-bold mb-4">Subscribe to our newsletter</h2>
+        <p className="mb-4">Get the latest updates on restock and new products</p>
+        <div className="flex flex-col items-center justify-around md:flex-row bg-white w-[624px] h-[72px]">
+          <input type="email" placeholder="Email address" className="p-2 border text-black w-[50%] border-custom-gray outline-none mb-2 md:mb-0 md:mr-2"  />
+          <button className="flex flex-row justify-center items-center p-2 bg-[#0C239E] text-white w-{160px] h-[48px]">Subscribe</button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

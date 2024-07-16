@@ -2,7 +2,6 @@ import React from 'react'
 import logo from '../../assets/image/Banner image.png'
 import band from '../../assets/image/Band aid.png'
 import bandage from '../../assets/image/Bandage scissors.png'
-import './Banner.css';
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
@@ -14,23 +13,31 @@ const Banner = () => {
 
   return (
     <>
-    <div className="banner">
-        <div className="banner-text">
-          <div className='band-aid'>
-          <img src={band} className='band-image'/>
-          </div>
-          <div className="text-button">
-          <h2>Get access to the best <br></br> healthcare products <br></br>with just a few clicks</h2>
-          <button onClick={handleViewAllClick}><span className='button-shop'>SHOP NOW</span></button>
-          <div className="bandage-scissors">
-            <img src={bandage}  className='band-image'/>
-          </div>
+      <div className="flex flex-row justify-between w-full h-[585px] border-[0.2px] border-custom-gray m-0 pb-0 pl-6">
+      <div className="absolute left-20 mt-2">
+          <img src={band} alt="Band Aid" className="w-[60px] h-[60px]" />
+        </div>
+      <div className="w-[600px] flex flex-col justify-center">
+        <div className="flex flex-col ml-12 mt-24 mb-16 gap-10">
+          <h2 className="text-4xl font-bold">
+            Get access to the best <br /> healthcare products <br /> with just a few clicks
+          </h2>
+          <button
+            onClick={handleViewAllClick}
+            className="w-[250px] h-[70px] rounded-2xl bg-my-gray text-white flex items-center justify-center shadow-md border-none"
+          >
+            <span className="text-3xl font-bold cursor-pointer">SHOP NOW</span>
+          </button>
+          <div className="ml-[70%]">
+            <img src={bandage} alt="Bandage Scissors" className="w-[60px] h-[60px]" />
           </div>
         </div>
-        <div className="banner-image">
-       <img src={logo} className='image-in-band'/>
+      </div>
+      <div className="w-[600px]">
+        <img src={logo} alt="Banner" className="w-full h-auto" />
+      </div>
     </div>
-    </div>
+
     </>
   )
 }
